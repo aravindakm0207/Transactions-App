@@ -1,44 +1,36 @@
-﻿# Transactions-App
+Transactions App API
+A backend API built with Node.js, Express, and MongoDB for managing users and transactions. The API supports user registration, login, and transaction management with JWT-based authentication and secure data handling.
 
- #Introduction
- 
-Transactions App API built using Node.js, Express, and MongoDB.
-Backend for managing users and transactions, allowing user registration, login, and transactions.
 Features
-User registration and login with validation.
-JWT-based authentication.
-CRUD operations for appointments.
-Validation of user input using express-validator.
-Middleware for authentication.
-Logging middleware for request tracking.
-
+User registration and login with input validation.
+JWT-based user authentication.
+CRUD operations for managing transactions.
+Request data validation with express-validator.
+Authentication middleware for protecting routes.
+Middleware for logging and request tracking.
 Technologies Used
-
-Node.js: JavaScript runtime for building server-side applications.
+Backend:
+Node.js: JavaScript runtime for building the server-side logic.
 Express.js: Web framework for building RESTful APIs.
 MongoDB: NoSQL database for storing user and transaction data.
-Mongoose: ODM library for MongoDB and Node.js.
-JWT (JSON Web Tokens): For user authentication.
-Bcrypt.js: For password hashing.
-Express Validator: Middleware for validating request data.
-
-MVC Structure
-
-Models: Define data structure and handle database interactions.
-user-model.js: User schema.
-product-model.js: Product schema.
-Controllers: Handle transactions logic and interact with models.
-users-cltr.js: Functions for user registration, login, and account retrieval.
-product-cltr.js: Functions for managing product transactions.
-Middlewares: Functions executing during request-response cycle.
-authenticateUser.js: Middleware for authenticating users.
-
-Technologies Used
-
-React: Front-end library for building user interfaces.
-React Router: For routing and navigation.
-Axios: For making HTTP requests.
-react-chart: For displaying bar chart.
-validator.js: For input validation.
-Context API: For managing authentication state.
-Error Handling: Client-side validation with user-friendly messages.
+Mongoose: ODM library for interacting with MongoDB in Node.js.
+JWT (JSON Web Tokens): Used for secure user authentication.
+Bcrypt.js: For hashing passwords.
+Express Validator: Middleware for request data validation.
+Frontend:
+React: Library for building user interfaces.
+React Router: For handling routing and navigation.
+Axios: For making HTTP requests to the backend.
+react-chart: For displaying bar charts and other visualizations.
+validator.js: For client-side input validation.
+Context API: For managing global authentication state.
+Project Structure
+Models:
+user-model.js: Schema and logic for user data.
+product-model.js: Schema and logic for transaction data.
+Controllers:
+users-cltr.js: Handles user registration, login, and profile retrieval.
+product-cltr.js: Manages CRUD operations and transaction logic.
+Middlewares:
+authenticateUser.js: Verifies JWT tokens for protected routes.
+Logging middleware: Tracks incoming requests for debugging and auditing.
