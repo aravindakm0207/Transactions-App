@@ -4,12 +4,12 @@ A backend API built with Node.js, Express, and MongoDB for managing users and tr
 
 Features
 
--User registration and login with input validation.
--JWT-based user authentication.
--CRUD operations for managing transactions.
--Request data validation with express-validator.
--Authentication middleware for protecting routes.
--Middleware for logging and request tracking.
+User registration and login with input validation.
+JWT-based user authentication.
+CRUD operations for managing transactions.
+Request data validation with express-validator.
+Authentication middleware for protecting routes.
+Middleware for logging and request tracking.
 
 Technologies Used
 
