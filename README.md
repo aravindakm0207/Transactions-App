@@ -28,13 +28,13 @@ Models: Define data structure and handle database interactions.
 user-model.js: User schema.
 product-model.js: Product schema.
 Controllers: Handle transactions logic and interact with models.
-
 users-cltr.js: Functions for user registration, login, and account retrieval.
 product-cltr.js: Functions for managing product transactions.
 Middlewares: Functions executing during request-response cycle.
-
 authenticateUser.js: Middleware for authenticating users.
+
 Technologies Used
+
 React: Front-end library for building user interfaces.
 React Router: For routing and navigation.
 Axios: For making HTTP requests.
